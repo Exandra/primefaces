@@ -501,8 +501,8 @@
     </tag>
 
     <tag>
-        <description>Repeat is an alternative to the standard ui:repeat component, that fix the compatibility with Mojarra. There are no additonal features and
-            usage is same as ui:repeat.
+        <description>Repeat is an alternative to the standard ui:repeat component, that fix the compatibility with Mojarra. There are no additional features and
+            usage is same as ui:repeat. Do not use with Apache MyFaces. Upgrade to Mojarra 2.3.18, 3.0.3 or 4.0+ if possible.
         </description>
         <tag-name>repeat</tag-name>
         <component>
@@ -1104,7 +1104,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -2783,7 +2783,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -3699,7 +3699,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -4286,7 +4286,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -4891,7 +4891,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -5352,6 +5352,15 @@
             <name>displayPriority</name>
             <required>false</required>
             <type>java.lang.Integer</type>
+        </attribute>
+        <attribute>
+            <description>
+                <![CDATA[An EL expression or a literal text that defines a converter for the component. When it's an EL expression, it's resolved to a converter instance.
+    In case it's a static text, it must refer to a converter id.]]>
+            </description>
+            <name>converter</name>
+            <required>false</required>
+            <type>java.lang.Object</type>
         </attribute>
     </tag>
     <tag>
@@ -9027,7 +9036,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -10137,7 +10146,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -12050,7 +12059,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -12539,7 +12548,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -13078,7 +13087,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -13705,7 +13714,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -13908,7 +13917,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -14432,7 +14441,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -14987,7 +14996,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -15672,7 +15681,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -18063,7 +18072,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -18324,7 +18333,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -18922,7 +18931,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
     </tag>
     <tag>
@@ -19592,7 +19601,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -20180,7 +20189,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -20407,7 +20416,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -21266,7 +21275,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -22617,7 +22626,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -22836,7 +22845,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -23047,7 +23056,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -23363,7 +23372,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -23534,7 +23543,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -23721,7 +23730,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -23972,7 +23981,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -24151,7 +24160,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -24386,7 +24395,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -24766,7 +24775,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -25190,7 +25199,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -25760,7 +25769,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -27985,7 +27994,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -28887,7 +28896,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -29197,7 +29206,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -30341,7 +30350,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -31440,7 +31449,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -32806,7 +32815,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>
@@ -33599,7 +33608,7 @@
             </description>
             <name>converter</name>
             <required>false</required>
-            <type>java.faces.convert.Converter</type>
+            <type>javax.faces.convert.Converter</type>
         </attribute>
         <attribute>
             <description>

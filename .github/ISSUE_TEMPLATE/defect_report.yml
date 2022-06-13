@@ -1,7 +1,7 @@
 name: Defect report
 description: Create a report to help us improve PrimeFaces
 title: "Component: Title"
-labels: "defect"
+labels: ":lady_beetle: defect,:bangbang: needs-triage"
 body:
   - type: markdown
     attributes:
@@ -91,5 +91,5 @@ body:
     id: browsers
     attributes:
       label: Browser(s)
-      description: Is the issue only occures in specific browsers (or versions), mention them here.
+      description: If the issue only occures in specific browsers (or versions), mention them here.
       placeholder: e.g. Chrome 100.0.4896.127 (Official Build) (arm64) macOS
